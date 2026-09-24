@@ -4,6 +4,6 @@ def check_even_odd(number):
     else:
         return "Odd"
 
-
-print(check_even_odd(10))
-print(check_even_odd(7))
+if __name__ == "__main__":
+    number = int(input("Enter a number: "))
+    print(number, "is", check_even_odd(number)) 
