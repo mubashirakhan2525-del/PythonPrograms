@@ -1,6 +1,3 @@
-import sys
-sys.path.append("Code")
-
 from importlib.machinery import SourceFileLoader
 
 program = SourceFileLoader("even_odd", "Code/01_even_odd.py").load_module()
