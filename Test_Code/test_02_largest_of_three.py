@@ -2,10 +2,25 @@ from importlib.machinery import SourceFileLoader
 
 program = SourceFileLoader("largest_of_three", "Code/02_largest_of_three.py").load_module()
 
-assert program.largest_of_three(10, 20, 15) == 20
-assert program.largest_of_three(5, 3, 2) == 5
-assert program.largest_of_three(1, 7, 9) == 9
-assert program.largest_of_three(-2, -5, -1) == -1
-assert program.largest_of_three(10, 10, 5) == 10
+
+def test_largest_first():
+    assert program.largest_of_three(10, 5, 3) == 10
+
+
+def test_largest_second():
+    assert program.largest_of_three(4, 12, 7) == 12
+
+
+def test_largest_third():
+    assert program.largest_of_three(2, 6, 15) == 15
+
+
+def test_equal_numbers():
+    assert program.largest_of_three(5, 5, 3) == 5
+
+
+def test_negative_numbers():
+    assert program.largest_of_three(-10, -3, -7) == -3
+
 
 print("All test cases passed.")
