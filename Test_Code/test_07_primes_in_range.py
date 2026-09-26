@@ -21,3 +21,5 @@ def test_single_prime():
 
 def test_range_starting_from_zero():
     assert program.primes_in_range(0, 3) == [2, 3]
+
+print("All test cases passed.")
