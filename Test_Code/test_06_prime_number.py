@@ -21,3 +21,5 @@ def test_one_is_not_prime():
 
 def test_zero_is_not_prime():
     assert program.is_prime(0) == False
+
+print("All test cases passed.")
